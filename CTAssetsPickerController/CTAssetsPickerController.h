@@ -42,6 +42,8 @@
  */
 @property (nonatomic, weak) id <CTAssetsPickerControllerDelegate> delegate;
 
+@property (nonatomic, weak) UIColor *barTintColor;
+
 /**
  *  Set the `assetCollectionSubtypes` to specify which asset collections (albums) to be shown in the picker.
  *

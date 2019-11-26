@@ -250,6 +250,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 {
     CTAssetCollectionViewController *vc = [CTAssetCollectionViewController new];
     CTAssetsNavigationController *master = [[CTAssetsNavigationController alloc] initWithRootViewController:vc];
+    master.navigationBar.barTintColor = self.barTintColor;
     UINavigationController *detail = [self emptyNavigationController];
     UISplitViewController *svc  = [UISplitViewController new];
     
